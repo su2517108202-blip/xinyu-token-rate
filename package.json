@@ -1,0 +1,58 @@
+{
+  "name": "dsh-xinyu-token-rate",
+  "version": "1.2.0",
+  "description": "心语 Token 速率 —— DeepSeek Harness 输入框停靠区的 token 吞吐仪表：流式速率、滑动窗口曲线、首字延迟、缓存命中与上下文压力；读数只来自当前会话，零网络请求。",
+  "type": "module",
+  "license": "MIT",
+  "author": "su2517108202-blip",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tokens",
+    "tok/s",
+    "throughput",
+    "gauge",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/su2517108202-blip/xinyu-token-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/su2517108202-blip/xinyu-token-rate/issues"
+  },
+  "homepage": "https://github.com/su2517108202-blip/xinyu-token-rate#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js && node scripts/check-manifest.mjs",
+    "bench": "node bench/verify_client.mjs && node bench/verify_rate.mjs",
+    "sessions": "node scripts/extract-sessions.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

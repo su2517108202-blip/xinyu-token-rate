@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Xinyu Token Rate",
+    "description": "A live token-throughput gauge docked above the composer: streaming rate, first-token latency and a sliding-window curve while the model writes, then this turn's decode speed, cache hit and context pressure once it settles. Reads only the session snapshots and projections the host already publishes — no network requests, no files written.",
+    "detail": "docs/DETAIL.md"
+  }
+}
