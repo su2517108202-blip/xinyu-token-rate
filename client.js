@@ -27,7 +27,7 @@
  * dock, so they leave with the surface.
  */
 window.__ModuleLoader__.load({
-  id: '@local/xinyu-token-rate',
+  id: 'dsh-xinyu-token-rate',
   factory: (require) => {
     const React = require('react')
     const { createPortal } = require('react-dom')
