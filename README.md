@@ -39,7 +39,7 @@
 
 ```sh
 # git 依赖，固定 tag
-dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.0'
+dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.1'
 
 # 或本地 link（改代码即时生效）
 git clone https://github.com/su2517108202-blip/xinyu-token-rate.git

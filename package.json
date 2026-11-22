@@ -1,6 +1,6 @@
 {
   "name": "dsh-xinyu-token-rate",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "心语 Token 速率 —— DeepSeek Harness 输入框停靠区的 token 吞吐仪表：流式速率、滑动窗口曲线、首字延迟、缓存命中与上下文压力；读数只来自当前会话，零网络请求。",
   "type": "module",
   "license": "MIT",

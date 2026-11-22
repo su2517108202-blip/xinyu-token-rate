@@ -27,10 +27,10 @@ dsh plugin --profile desktop add link:$PWD/xinyu-token-rate
 ## 方式三：固定版本的 git 依赖
 
 ```sh
-dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.0'
+dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.1'
 ```
 
-适合想要可复现环境的情形。升级时把 `#v1.2.0` 换掉重装。
+适合想要可复现环境的情形。升级时把 `#v1.2.1` 换掉重装。
 
 ## 装完应该看到什么
 

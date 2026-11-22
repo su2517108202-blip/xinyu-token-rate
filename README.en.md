@@ -39,7 +39,7 @@ In DSH's **Plugins** page, install from a local directory and point it at your c
 
 ```sh
 # git dependency pinned to a tag
-dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.0'
+dsh plugin --profile desktop add 'dsh-xinyu-token-rate@github:su2517108202-blip/xinyu-token-rate#v1.2.1'
 
 # or a local link, for development (edits hot-reload)
 git clone https://github.com/su2517108202-blip/xinyu-token-rate.git
